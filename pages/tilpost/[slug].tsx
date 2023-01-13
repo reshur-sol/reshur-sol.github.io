@@ -2,7 +2,7 @@ import Container from 'components/container/Container';
 import { allPosts } from 'contentlayer/generated';
 import { InferGetStaticPropsType } from 'next';
 import { useMDXComponent } from 'next-contentlayer/hooks';
-import * as PostStyles from './PostStyles';
+import * as PostStyles from '../../components/pagestyles/PostStyles';
 
 const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const MDXComponent = useMDXComponent(post.body.code);
