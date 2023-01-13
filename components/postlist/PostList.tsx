@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import * as PostListStyles from './Postlist.Styles';
+import * as PostListStyles from './PostList.Styles';
 
-export default function PostList() {
+export default function PostList({ date, title, des, slug }) {
   return (
     <PostListStyles.Frame>
       <Link
-        href={'/til'}
+        href={`/tilpost/${slug}`}
         passHref
       >
-        <PostListStyles.PostTitle>HTML이란 무엇인가?</PostListStyles.PostTitle>
-        <PostListStyles.PostDate>23.01.01</PostListStyles.PostDate>
-        <PostListStyles.PostDes>설명입니다.</PostListStyles.PostDes>
+        <PostListStyles.PostTitle>{title}</PostListStyles.PostTitle>
+        <PostListStyles.PostDate>{date}</PostListStyles.PostDate>
+        <PostListStyles.PostDes>{des}</PostListStyles.PostDes>
       </Link>
     </PostListStyles.Frame>
   );
