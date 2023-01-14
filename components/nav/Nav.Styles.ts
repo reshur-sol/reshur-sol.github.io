@@ -6,7 +6,7 @@ export const Frame = styled.nav`
   align-items: center;
   background-color: #e7e1e1;
   padding: 0 30px;
-  border-bottom: 1px solid #2f4858; ;
+  border-bottom: 1.5px solid #2f4858; ;
 `;
 export const Logo = styled.div`
   margin: 25px 0;
