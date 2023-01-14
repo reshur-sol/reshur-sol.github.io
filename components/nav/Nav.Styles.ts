@@ -22,7 +22,7 @@ export const Title = styled.div`
   font-size: 32px;
   font-family: 'Bebas Neue', cursiv;
   color: #2f4858;
-  padding-left: 220px;
+  padding-left: 200px;
   :hover {
     color: #ff6863;
     transition: all 300ms ease-in;

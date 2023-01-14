@@ -1,6 +1,7 @@
 import * as RecentStyles from './RecentsPost.Styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 export default function RecentPost() {
   return (
     <RecentStyles.Frame>
@@ -8,11 +9,9 @@ export default function RecentPost() {
       <RecentStyles.PostFrame>
         <RecentStyles.Post>
           <RecentStyles.Category>TIL</RecentStyles.Category>
-          <RecentStyles.PostTitle>HTML이란 무엇인가?</RecentStyles.PostTitle>
-          <RecentStyles.PostDate>2023.11.11</RecentStyles.PostDate>
-          <RecentStyles.PostDescription>
-            html은 하이퍼 텍스트 마크업 랭귀지 이다
-          </RecentStyles.PostDescription>
+          <RecentStyles.PostTitle>title</RecentStyles.PostTitle>
+          <RecentStyles.PostDate>23.11.11</RecentStyles.PostDate>
+          <RecentStyles.PostDescription>hello</RecentStyles.PostDescription>
         </RecentStyles.Post>
         <RecentStyles.BtnFrame>
           <RecentStyles.Btn>

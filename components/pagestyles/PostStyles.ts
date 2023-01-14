@@ -19,7 +19,7 @@ export const PostFrame = styled.div`
   height: 100vh;
   font-family: 'Roboto Mono', monospace;
   border: 1px solid #344564;
-  background-color: #ffffff;
+  background-color: #fff6f6;
 `;
 export const TitleFrame = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ export const TitleFrame = styled.div`
   margin-bottom: 150px;
   width: 840px;
   height: 250px;
-  background-color: #fff6f6;
+  background-color: #ffffff;
   /* #E7E1E1 */
   border-radius: 5px;
 `;
@@ -44,17 +44,17 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   margin: 5px 0px;
   padding: 0 15px;
-  background-color: #fff6f6;
+  background-color: #ffffff;
   border-bottom: 2px dashed black;
 `;
 export const Date = styled.span`
   margin-top: 10px;
   font-size: 14px;
   color: #344564;
-  background-color: #fff6f6;
+  background-color: #ffffff;
 `;
 export const ContentFrame = styled.div`
   text-align: left;
   width: 1000px;
-  background-color: #ffffff;
+  background-color: #fff6f6;
 `;
