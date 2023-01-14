@@ -8,13 +8,18 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const MDXComponent = useMDXComponent(post.body.code);
   return (
     <Container>
-      <PostStyles.frame>
+      <PostStyles.Frame>
         <PostStyles.PostFrame>
-          <PostStyles.PostTitle>{post.title}</PostStyles.PostTitle>
-          <PostStyles.Date>{post.date}</PostStyles.Date>
+          <PostStyles.TitleFrame>
+            <PostStyles.Category>TIL</PostStyles.Category>
+            <PostStyles.PostTitle>{post.title}</PostStyles.PostTitle>
+            <PostStyles.Date>{post.date}</PostStyles.Date>
+          </PostStyles.TitleFrame>
+          <PostStyles.ContentFrame>
+            <MDXComponent />
+          </PostStyles.ContentFrame>
         </PostStyles.PostFrame>
-        <MDXComponent />
-      </PostStyles.frame>
+      </PostStyles.Frame>
     </Container>
   );
 };
