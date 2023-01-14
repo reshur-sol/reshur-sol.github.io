@@ -7,9 +7,14 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 export default function NavBar() {
   return (
     <NavStyles.Frame>
-      <NavStyles.Logo>
-        <FontAwesomeIcon icon={faMoon} />
-      </NavStyles.Logo>
+      <Link
+        href={'/'}
+        passHref
+      >
+        <NavStyles.Logo>
+          <FontAwesomeIcon icon={faMoon} />
+        </NavStyles.Logo>
+      </Link>
       <NavStyles.Title>{MetaData.title}</NavStyles.Title>
       <NavStyles.Menu>
         {NavLinks.map((nav) => (
