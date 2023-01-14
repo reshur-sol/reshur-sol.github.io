@@ -7,15 +7,18 @@ export default function Til({ posts }: InferGetStaticPropsType<typeof getStaticP
   return (
     <Container>
       <TilStyles.Frame>
-        {posts.map((post) => (
-          <PostList
-            date={post.date}
-            title={post.title}
-            des={post.description}
-            slug={post._raw.flattenedPath}
-            key={post._id}
-          />
-        ))}
+        <TilStyles.SubTitle>Today I Learn</TilStyles.SubTitle>
+        <TilStyles.List>
+          {posts.map((post) => (
+            <PostList
+              date={post.date}
+              title={post.title}
+              des={post.description}
+              slug={post._raw.flattenedPath}
+              key={post._id}
+            />
+          ))}
+        </TilStyles.List>
       </TilStyles.Frame>
     </Container>
   );
