@@ -1,3 +1,4 @@
+import Footer from 'components/footer/footer';
 import Head from 'next/head';
 import MetaData from '../../data/metadata';
 import NavBar from '../nav/Nav';
@@ -21,8 +22,13 @@ export default function Container(props) {
           content={meta.author}
         />
       </Head>
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <main>{props.children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
