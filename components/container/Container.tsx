@@ -1,4 +1,4 @@
-import Footer from 'components/footer/footer';
+import Footer from 'components/footer/Footer';
 import Head from 'next/head';
 import MetaData from '../../data/metadata';
 import NavBar from '../nav/Nav';
