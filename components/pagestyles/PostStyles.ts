@@ -20,6 +20,7 @@ export const PostFrame = styled.div`
   font-family: 'Roboto Mono', monospace;
   border: 1px solid #344564;
   background-color: #fff6f6;
+  width: 1240px;
 `;
 export const TitleFrame = styled.div`
   display: flex;
@@ -33,6 +34,7 @@ export const TitleFrame = styled.div`
   background-color: #ffffff;
   /* #E7E1E1 */
   border-radius: 5px;
+  border: 2px dashed #344564;
 `;
 export const Category = styled.div`
   color: #fd526c;
@@ -52,6 +54,10 @@ export const Date = styled.span`
   font-size: 14px;
   color: #344564;
   background-color: #ffffff;
+`;
+export const Author = styled.div`
+  font-size: 14px;
+  color: #344564;
 `;
 export const ContentFrame = styled.div`
   text-align: left;
