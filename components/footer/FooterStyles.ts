@@ -7,6 +7,7 @@ export const Frame = styled.footer`
   padding-bottom: 30px;
   font-family: 'Chivo Mono', monospace;
   border-top: 1.5px solid #000000;
+  position: relative;
 `;
 export const CategoryFrame = styled.div`
   display: flex;
@@ -55,5 +56,14 @@ export const SocialFrame = styled.div`
       color: #fd526c;
     }
   }
+`;
+export const TopBtn = styled.button`
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  position: sticky;
+  right: 10px;
+  bottom: 10px;
 `;
 export const Categories = styled.div``;

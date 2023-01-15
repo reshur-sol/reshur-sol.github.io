@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import * as FooterStyles from './FooterStyles';
 export default function Footer() {
+  const MoveToTop = () => {
+    scrollTo(0, 0);
+  };
   return (
     <FooterStyles.Frame>
       <FooterStyles.CategoryFrame>
@@ -30,6 +33,7 @@ export default function Footer() {
             />
           </a>
         </FooterStyles.SocialFrame>
+        {/* <FooterStyles.TopBtn onClick={MoveToTop}>TOP</FooterStyles.TopBtn> */}
       </FooterStyles.CategoryFrame>
     </FooterStyles.Frame>
   );
