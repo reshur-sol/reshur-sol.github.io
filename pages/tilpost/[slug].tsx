@@ -11,9 +11,10 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <PostStyles.Frame>
         <PostStyles.PostFrame>
           <PostStyles.TitleFrame>
-            <PostStyles.Category>TIL</PostStyles.Category>
+            <PostStyles.Category>TODAY I LEARN</PostStyles.Category>
             <PostStyles.PostTitle>{post.title}</PostStyles.PostTitle>
             <PostStyles.Date>{post.date}</PostStyles.Date>
+            <PostStyles.Author>author: RESHUR</PostStyles.Author>
           </PostStyles.TitleFrame>
           <PostStyles.ContentFrame>
             <MDXComponent />
